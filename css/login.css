@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 89vw;
+    height: 80vh;
+    display: flex;
+}
+
+.esquerda{
+    width: 50vw;
+    background-color: rgb(145, 114, 74);
+    position: relative;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita{
+    width: 50vw;
+    background-color: rgb(182, 150, 107);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#img{
+    height: 25vh;
+}
+
+
+.colab {
+    transform: translateY(200px);
+    font-size: 20px;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entrar {
+    margin-top: 20px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    width: 200px;
+    position: relative;
+}
+
+
+span {
+    position: absolute;
+    transform: translateX(-200px);
+}
