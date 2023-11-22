@@ -50,6 +50,7 @@ h1 {
     background-color: rgb(182, 150, 107);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    position: static;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,16 +83,18 @@ span {
 }
 
 a{
-    transform: translateY(150px);
+    transform: translateX(-500px);
+    width: 150px;
     font-size: 18px;
-    position: fixed;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:static;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
 }
 
 a:hover{
     color: rgb(41, 9, 71);
+
 }
 
 a:active{
