@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script src="../js/cadastro.js" defer></script>
+    <title>cadastro</title>
+</head>
+
+<body>
+    <main>
+        <div class="esquerda">
+            <img id="img-login" src="../img/login.jpeg">
+            <h1>TimelineArt</h1>
+        </div>
+        <div class="direita">
+            <form>
+                <h2>Cadastro</h2>
+                <div class="input input-nome">
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input id="input-nome" type="text" name="nome" placeholder="Insira o seu nome" minlength="4"
+                        required>
+                </div>
+                <div class="input input-email">
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input id="input-email" type=" email" name="email" placeholder="Digite o seu e-mail" required>
+                </div>
+                <div class="input input-senha">
+                    <label for="senha">Senha:</label>
+                    <br>
+                    <input id="input-senha" type="password" name="senha" placeholder="Crie uma senha" minlength="6"
+                        required>
+                </div>
+                <input id="btn-cadastrar" class="btn" type="submit" value="Fazer cadastro" required>
+            </form>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>
