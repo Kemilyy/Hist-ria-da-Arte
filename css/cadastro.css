@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -18,7 +19,7 @@ main {
     display: flex;
 }
 
-.esquerda {
+main .esquerda {
     width: 50vw;
     background-color: rgb(145, 114, 74);
     position: static;
@@ -30,74 +31,47 @@ main {
     flex-direction: column;
 }
 
-#img {
-    height: 25vh;
-}
-
-.colab {
-    transform: translateY(250px);
-    font-size: 20px;
-    position: fixed;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-h1 {
-    padding: 15px;
-}
-
-.direita {
+main .direita {
     width: 50vw;
     background-color: rgb(182, 150, 107);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    position: static;
+}
+
+main form {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    gap: 20px;
 }
 
-h2 {
+#img-login {
+    height: 25vh;
+}
+
+main h1 {
+    padding: 15px;
+}
+
+main h2 {
     font-size: 30px;
+    text-align: center;
+    margin: 20px;
 }
 
-input {
-    background-color: transparent;
+main input {
+    background-color: #91724a77;
     border: none;
     outline: none;
     border-bottom: 1px solid black;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 10px;
     width: 300px;
     position: relative;
 }
 
-span {
-    position: absolute;
-    transform: translateX(-290px);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.ent {
-    margin-top: 20px;
-}
-
-a{
-    transform: translateX(-500px);
-    width: 150px;
-    font-size: 18px;
-    position:static;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+::placeholder {
     color: black;
 }
-
-a:hover{
-    color: rgb(41, 9, 71);
-
-}
-
-a:active{
-    color: rgb(182, 150, 107);
-}
-

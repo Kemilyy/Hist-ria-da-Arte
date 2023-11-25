@@ -1,52 +1,23 @@
-const btn = document.querySelector('.modalbtn');
-const modal = document.querySelector('.modal');
+(() => {
+    const formEl = document.querySelector("form");
+    const inputEmailEl = document.querySelector("#input-email");
+    const inputSenhaEl = document.querySelector("#input-senha");
+    const msgErroEl = document.querySelector("#msg-erro");
 
-const switchModal = () => {
-    const modal = document.querySelector('.modal');
-    const actualStyle = modal.style.display;
+    formEl.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-    if (actualStyle == 'block') {
-        modal.style.display = 'none';
-    }
-    else {
-        modal.style.display = 'block';
-    }
-}
+        let email = inputEmailEl.value;
+        let senha = inputSenhaEl.value;
 
-btn.addEventListener('click', switchModal);
+        let testeEmail = email === localStorage.getItem("email");
+        let testeSenha = senha === localStorage.getItem("senha");
+        let teste = testeEmail && testeSenha;
 
-window.onclick = function (event) {
-    if (event.target == modal) {
-        switchModal();
-    }
-}
-
-
-function validarLogin() {
-    // Verifique se os campos de email e senha estão preenchidos.
-    const email = document.getElementById("email").value;
-    const senha = document.getElementById("email").value;
-  
-    if (email === "" || senha === "") {
-      alert("Preencha todos os campos.");
-      return false;
-    }
-  
-    // Verifique se o email é válido.
-    const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!regexEmail.test(email)) {
-      alert("O email é inválido.");
-      return false;
-    }
-  
-    // Verifique se a senha é válida.
-    const regexSenha = /^(*[0-9])$/;
-    if (!regexSenha.test(senha)) {
-      alert("A senha deve ter pelo menos 8 caracteres, incluindo números, letras maiúsculas e minúsculas.");
-      return false;
-    }
-  
-    window.location.href = "./index.html"
-    return true;
-  }
-  
+        if (teste) {
+            window.location.href = "../index.html";
+        } else {
+            msgErroEl.style.display = "block";
+        }
+    });
+})();
