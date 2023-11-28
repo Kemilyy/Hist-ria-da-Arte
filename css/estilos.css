@@ -1,36 +1,41 @@
-
+/* Import Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
-  background-color: #151515; 
+  background-color: #8B4513; /* Dark gray */
   font-family: 'Poppins', sans-serif;
 }
 
+/* Timeline container */
 .timeline {
   position: relative;
   margin: 50px auto;
   padding: 40px 0;
-  width: 80%; 
+  width: 80%; /* Adjust width as needed */
   max-width: 1000px;
   box-sizing: border-box;
 }
 
+/* Timeline line */
 .timeline:before {
   content: '';
   position: absolute;
   left: 50%;
   width: 2px;
   height: 100%;
-  background: #0079FF; /* Blue */
+  background: rgb(145, 114, 74); /* Blue */
 }
 
+/* Timeline list */
 .timeline ul {
   margin: 0;
   padding: 0;
 }
 
+/* Timeline list items */
 .timeline li {
   list-style: none;
   position: relative;
@@ -39,24 +44,28 @@ body {
   box-sizing: border-box;
 }
 
+/* Timeline list items on odd rows */
 .timeline li:nth-child(odd) {
   float: left;
   text-align: right;
   clear: both;
 }
 
+/* Timeline list items on even rows */
 .timeline li:nth-child(even) {
   float: right;
   text-align: left;
   clear: both;
 }
 
+/* Timeline content block */
 .content {
-  background-color: #1B1B1B; 
+  background-color: rgb(145, 114, 74); /* Slightly darker gray */
   padding: 20px;
   padding-bottom: 20px;
 }
 
+/* Timeline list item indicators */
 .timeline li:nth-child(odd):before {
   content: '';
   position: absolute;
@@ -64,9 +73,9 @@ body {
   right: -6px;
   width: 10px;
   height: 10px;
-  background: #333; 
+  background: white; /* Darker gray */
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #0079FF; /* Blue */
+  box-shadow: 0 0 0 3px rgb(182, 150, 107); /* Blue */
 }
 
 .timeline li:nth-child(even):before {
@@ -76,10 +85,11 @@ body {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: #333; 
+  background: white; /* Darker gray */
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #0079FF; /* Blue */
+  box-shadow: 0 0 0 3px rgb(182, 150, 107); /* Blue */
 }
 
+/* Timeline list item headings */
 .timeline ul li h3 {
   margin: 0
