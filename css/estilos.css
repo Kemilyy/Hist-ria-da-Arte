@@ -1,41 +1,39 @@
-/* Import Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Global styles */
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Playfair+Display:ital,wght@1,900&display=swap');
+</style>
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #8B4513; /* Dark gray */
-  font-family: 'Poppins', sans-serif;
+  background-color: #8B4513; 
+ font-family: 'Frank Ruhl Libre', serif;
 }
 
-/* Timeline container */
 .timeline {
   position: relative;
   margin: 50px auto;
   padding: 40px 0;
-  width: 80%; /* Adjust width as needed */
+  width: 80%; 
   max-width: 1000px;
   box-sizing: border-box;
 }
 
-/* Timeline line */
+
 .timeline:before {
   content: '';
   position: absolute;
   left: 50%;
   width: 2px;
   height: 100%;
-  background: rgb(145, 114, 74); /* Blue */
+  background: rgb(145, 114, 74); 
 }
 
-/* Timeline list */
 .timeline ul {
   margin: 0;
   padding: 0;
 }
 
-/* Timeline list items */
 .timeline li {
   list-style: none;
   position: relative;
@@ -44,28 +42,24 @@ body {
   box-sizing: border-box;
 }
 
-/* Timeline list items on odd rows */
 .timeline li:nth-child(odd) {
   float: left;
   text-align: right;
   clear: both;
 }
 
-/* Timeline list items on even rows */
 .timeline li:nth-child(even) {
   float: right;
   text-align: left;
   clear: both;
 }
 
-/* Timeline content block */
 .content {
-  background-color: rgb(145, 114, 74); /* Slightly darker gray */
+  background-color: rgb(145, 114, 74); 
   padding: 20px;
   padding-bottom: 20px;
 }
 
-/* Timeline list item indicators */
 .timeline li:nth-child(odd):before {
   content: '';
   position: absolute;
@@ -73,9 +67,9 @@ body {
   right: -6px;
   width: 10px;
   height: 10px;
-  background: white; /* Darker gray */
+  background: white; 
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgb(182, 150, 107); /* Blue */
+  box-shadow: 0 0 0 3px rgb(182, 150, 107);
 }
 
 .timeline li:nth-child(even):before {
@@ -85,11 +79,12 @@ body {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: white; /* Darker gray */
+  background: white; 
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgb(182, 150, 107); /* Blue */
+  box-shadow: 0 0 0 3px rgb(182, 150, 107); 
 }
 
-/* Timeline list item headings */
 .timeline ul li h3 {
+    margin: 0
+}
   margin: 0
