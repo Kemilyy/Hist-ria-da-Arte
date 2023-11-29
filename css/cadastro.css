@@ -75,3 +75,17 @@ main input {
 ::placeholder {
     color: black;
 }
+
+.c{
+    margin-top: 150px;
+}
+
+#btn-cadastrar{
+    text-decoration: none;
+    background-color: rgb(182, 150, 107);
+    border: none;
+}
+
+#btn-cadastrar:hover{
+    color: rgb(48, 17, 77);
+}

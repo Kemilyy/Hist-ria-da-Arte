@@ -1,4 +1,4 @@
-if (localStorage.getItem('logou') !== 1) {
+if (localStorage.getItem('logou') !== '1') {
     location.href = "./html/login.html";
 }
 

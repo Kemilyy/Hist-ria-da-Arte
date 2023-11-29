@@ -78,7 +78,32 @@ main input {
 
 #msg-erro {
     display: none;
-    color: red;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 900;
+}
+
+.sob{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.dc{
+    margin-top: 200px;
+}
+
+.cad{
+    text-decoration: none;
+    color: black;
+}
+
+.cad:hover{
+    color: rgb(48, 17, 77);
+}
+
+.modal-body {
+    background-color:rgba(100, 75, 41, 0.637);
+    color: black;
+
 }

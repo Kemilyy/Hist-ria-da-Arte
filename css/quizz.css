@@ -73,3 +73,7 @@ h1 {
 .answer.incorrect {
   background-color: #a67d50;
 }
+
+.next {
+  transform: translateY(-26px);
+}

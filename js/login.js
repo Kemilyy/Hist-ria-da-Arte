@@ -15,8 +15,8 @@
         let teste = testeEmail && testeSenha;
 
         if (teste) {
-            localStorage.setItem('logou', 1);
-            window.location.href = "index.html";
+            localStorage.setItem('logou', '1');
+            window.location.href = "../index.html";
         } else {
             msgErroEl.style.display = "block";
         }
